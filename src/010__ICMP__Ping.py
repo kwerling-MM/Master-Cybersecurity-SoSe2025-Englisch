@@ -17,7 +17,7 @@ def icmp_ping_scan(network_prefix, start_ip, end_ip):
 
 if __name__ == "__main__":
     # Netzwerk und IP-Bereich angeben
-    network_prefix = "192.168.56"  # Beispielnetzwerk
-    active = icmp_ping_scan(network_prefix, 100, 110)  # Scan von .1 bis .10
+    network_prefix = "192.168.100"  # Beispielnetzwerk
+    active = icmp_ping_scan(network_prefix, 5, 15)  # Scan von .5 bis .15
     print("\nActive hosts:")
     print("\n".join(active))
